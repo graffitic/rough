@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>RoughJS Arc</title>
+</head>
+
+<body>
+  <canvas width="800" height="800"></canvas>
+
+  <script type="module">
+    import rough from '../bundled/rough.esm.js';
+    const canvas = document.querySelector('canvas');
+    const rc = rough.canvas(canvas);
+
+    rc.arc(350, 200, 200, 180, Math.PI, Math.PI * 1.6);
+
+  </script>
+</body>
+
+</html>
